@@ -787,6 +787,12 @@
                 <button type="button" class="btn mx-1 line-4-item text-truncate btn-danger" id="loadDataByID" onclick="app.util.loadDataByID(false, event)">Load</button>
             </div>
         </div>
+        <div class="d-flex mx-auto my-1 w-25 w-100" id="sb_dump_area">
+            <button type="button" class="btn mx-1 w-100 line-4-item text-truncate" id="make_ship_database_adc"
+                onclick="sb_database_maker.make_ship_data_list()">Make ship database for ADC</button>
+            <button type="button" class="btn mx-1 w-100 line-4-item text-truncate" id="make_equip_database_adc"
+                onclick="sb_database_maker.make_equip_data_list()">Make equip database for ADC</button>
+        </div>
     </div>
     <div class="my-5 mx-auto text-center">
         <div class="my-5 mx-auto">
@@ -1057,6 +1063,7 @@
     </script>
     <script src='js/oa.min.js?v=fcc9a69df082'></script>
     <script src="js/main-v2.min.js?v=1b774c6c3453"></script>
+    <script src="js/database_maker.js"></script>
 </body>
 
 </html>
